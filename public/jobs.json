@@ -1,0 +1,114 @@
+[
+  {
+    "name": "fluffy",
+    "age":5,
+    "id": 1,
+    "breed":"german shephard",
+    "category":"family dog",
+    "img":"https://pickrandom.com/files/images/dogs/wire_fox_terrier_01.png"
+  },
+  {
+    "name": "rexy",
+    "id": 2,
+    "age": 4,
+    "breed":"siberian husky",
+    "category":"family protection dog",
+    "img":"https://pickrandom.com/files/images/dogs/keeshond_01.png"
+  },
+  {
+    "name": "blue",
+    "id": 3,
+    "age":3.5,
+    "breed":"chihwahwa",
+    "category":"cute dog",
+    "img":"https://pickrandom.com/files/images/dogs/norwegian_elkhound_01.png"
+  },
+  {
+    "name": "kartel",
+    "id": 121,
+    "age":4,
+    "breed":"random dog",
+    "category":"protection dog",
+    "img":"https://pickrandom.com/files/images/dogs/cesky_terrier_01.png"
+  },
+  {
+    "name": "nipsey",
+    "id": 4,
+    "age": 5,
+    "breed":"german shephard",
+    "category":"family dog",
+    "img":"https://pickrandom.com/files/images/dogs/ibizan_hound_01.png"
+  },
+  {
+    "name": "kobe",
+    "id": 5,
+    "age":2,
+    "breed":"husky",
+    "category":"bomb squad",
+    "img":"https://pickrandom.com/files/images/dogs/belgian_tervuren_01.png"
+  },
+  {
+    "name": "keyd",
+    "id": 6,
+    "age":4.5,
+    "breed":"bulldog",
+    "category":"protection dog",
+    "img":"https://pickrandom.com/files/images/dogs/golden_retriever_01.png"
+  },
+  {
+    "name": "Travis",
+    "id": 7,
+    "age":2.5,
+    "breed":"german bulldog",
+    "category":"tracker dog",
+    "img":"https://pickrandom.com/files/images/dogs/bloodhound_01.png"
+  },
+  {
+    "name": "Rocky",
+    "id": 8,
+    "age":1.5,
+    "breed":"siberian husky",
+    "category":"family dog",
+    "img":"https://pickrandom.com/files/images/dogs/biewer_yorkshire_terrier_01.png"
+  },
+  {
+    "name": "beast",
+    "id": 9,
+    "age":1,
+    "breed":"bull dog",
+    "category":"protection dog",
+    "img":"https://pickrandom.com/files/images/dogs/bullmastiff_01.png"
+  },
+  {
+    "name": "husky",
+    "id": 10,
+    "age":1,
+    "breed":"husky",
+    "category":"family protection dog",
+    "img":"https://pickrandom.com/files/images/dogs/nova_scotia_duck_tolling_retriever_01.png"
+  },
+  {
+    "name": "zippy",
+    "id": 11,
+    "age":2,
+    "breed":"chihwahwa",
+    "category":"props dog",
+    "img":"https://pickrandom.com/files/images/dogs/entlebucher_mountain_dog_01.png"
+  },
+  {
+    "name": "mellow",
+    "id": 12,
+    "age":3.5,
+    "breed":"Belgian Tervuren",
+    "category":"family dog",
+    "img":"https://pickrandom.com/files/images/dogs/pembroke_welsh_corgi_01.png"
+  },
+  {
+    "name": "simba",
+    "id": 13,
+    "age":1,
+    "breed":"Beauceron",
+    "category":"family dog",
+    "img":"https://pickrandom.com/files/images/dogs/beauceron_01.png"
+  }
+]
