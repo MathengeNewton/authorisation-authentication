@@ -2,6 +2,28 @@
   <div class="home">
     <div id="nav">
       <top-header></top-header>
+      <div id="mylink">
+  <a href="/signup">sign up</a><br>
+  <a href="/signin">sign in</a>
+</div>
+<div id="mycard"> 
+  <b-container fluid>
+    <b-row align-v="center">      
+        <job-card
+   :name="job.name"
+   :id="job.id"
+   :age="job.age"
+   :breed="job.breed"
+   :trainer="job.trainer"
+   :category="job.category"
+   :img="job.img"
+    v-for="job in getDisplayJobs"
+    :key="job.id"
+  >
+    </job-card>
+    </b-row>
+  </b-container>
+</div>
     </div>
     <router-view />
     <b-container>
@@ -22,6 +44,7 @@
 </template>
 
 <script>
+import JobCard from "@/components/JobCard.vue";
 import TopHeader from "@/components/top-header.vue";
 import { mapGetters } from "vuex";
 
@@ -36,7 +59,10 @@ export default {
       perPage: 3
     };
   },
-  components: { "top-header": TopHeader  },
+  components: { 
+    "top-header": TopHeader ,
+    "job-card": JobCard 
+    },
   computed: {
     ...mapGetters(["getRows", "getDisplayJobs"])
   },
@@ -51,9 +77,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-// b-card {
-// padding: 10px;
-// }
+#mycard {
+padding-left: 10%;
+margin: 5%;
+justify-content: space-between;
+}
 #nav {
   padding: 30px;
 

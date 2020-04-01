@@ -11,15 +11,21 @@ const routes = [
     component: Home
   },
   {
-    path: "/info",
-    name: "info",
+    path: "/myinfo",
+    name: "myinfo",
     component: () =>
       import( "../views/info.vue")
   },
   {
-    path: "/myinfo",
-    name: "myinfo",
-    component: Home
+    path: "/updateinfo",
+    name: "updateinfo",
+    component: () =>
+    import( "../views/updateinfo.vue")
+  },{
+    path: "/update-animal",
+    name: "updateanimal",
+    component: () =>
+      import( "../views/updateinfo.vue")
   },
   {
     path:"/signup",

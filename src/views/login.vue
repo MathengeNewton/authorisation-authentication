@@ -37,6 +37,7 @@
     </b-form>
     <div id="mylink">
   <a href="/signup">sign up</a>
+  <a href="/">home</a>
 </div>
     <b-card class="mt-3" header="Form Data Result">
       <pre class="m-0">{{ form }}</pre>

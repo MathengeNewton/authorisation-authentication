@@ -1,7 +1,6 @@
 <template>
   <div>
-    <b-col>
-      <b-card
+    <b-card
         :title="name"
         :img-src="img"
         img-alt="Image"
@@ -14,35 +13,17 @@
           <p><strong>Breed: </strong> {{breed}}</p>
           <p><strong>Age: </strong> {{age}}</p>
           <p><strong>Category: </strong>{{category}}</p>
+          <p><strong>Trainer: </strong>{{trainer}}</p>
         </b-card-text>
 
-        <b-button
-          v-b-tooltip.hover
-          title="Tooltip content"
-          v-b-modal="modalId"
-          variant="primary"
-          >view more</b-button
-        >
-        <b-modal :id="modalId" title="BootstrapVue">
-          <b-card
-        :title="name"
-        :img-src="img"
-        img-alt="Image"
-        img-top
-        tag="article"
-        style="max-width: 20rem;"
-        class="mb-2"
-        id="mb-2"
-      ></b-card>
-        </b-modal>
-      </b-card>
-    </b-col>
+    <b-button href="/update-animal" variant="primary">update</b-button>
+  </b-card>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["name", "img","id","age","breed","category"],
+  props: ["name", "img","id","age","breed","category","trainer"],
   computed: {
     modalId() {
       return `modal-${this.id}`;

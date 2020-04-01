@@ -3,27 +3,42 @@
     <div id="nav">
       <top-header></top-header>
     </div>
+    <div id="body">
+      <div id="head">
+        <my-avatar></my-avatar>
+      </div>  
+      <div>
+  <b-card no-body>
+    <b-card-header header-tag="nav">
+      <b-nav card-header tabs>
+        <b-nav-item active>Personal details</b-nav-item>
+        <b-nav-item id="details">Career details</b-nav-item>
+      </b-nav>
+    </b-card-header>
+
+    <b-card-body class="text-center">
+      <b-card-title >Personal details</b-card-title>
+      <b-card-text>
+        <div class="dets">
+         <p><strong> name:  </strong></p>
+         <p><strong> email:  </strong></p>
+         <p><strong>phone:  </strong></p>
+         <p><strong> position:  </strong></p>
+        </div>
+      </b-card-text>
+      <b-button to="/updateinfo" variant="primary">Go somewhere</b-button>
+    </b-card-body>
+
+  </b-card>
+</div>    
+    </div>
     <router-view />
-    <b-container>
-      <b-row align-v="center">
-      </b-row>
-      <b-pagination
-        v-model="currentPage"
-        :total-rows="getRows"
-        :per-page="perPage"
-        first-text="First"
-        prev-text="Prev"
-        next-text="Next"
-        last-text="Last"
-        @input="paginate(currentPage)"
-      ></b-pagination>
-    </b-container>
   </div>
 </template>
 
 <script>
 import TopHeader from "@/components/top-header.vue";
-import { mapGetters } from "vuex";
+import avatar from "@/components/avatar.vue";
 
 export default {
   name: "about",
@@ -36,24 +51,13 @@ export default {
       perPage: 3
     };
   },
-  components: { "top-header": TopHeader  },
-  computed: {
-    ...mapGetters(["getRows", "getDisplayJobs"])
-  },
-  methods: {
-    paginate(currentPage) {
-      this.$store.dispatch("paginate", { currentPage, perPage: this.perPage });
-    },
-    async getRecords() {
-      await this.$store.dispatch("fetchJobs");
-    }
-  }
+  components: { 
+    "top-header": TopHeader,
+    "my-avatar": avatar
+     }
 };
 </script>
 <style lang="scss" scoped>
-// b-card {
-// padding: 10px;
-// }
 #nav {
   padding: 30px;
 
@@ -65,5 +69,21 @@ export default {
       color: #42b983;
     }
   }
+}
+#body{
+  width: 70%;
+  height: 90%;
+  margin-left:15%;
+  border: 0.2px solid black;
+  padding: 5%;
+}
+#head{
+  width: 60%;
+  margin-left: 20%;
+  height: 30%;
+  padding: 5%;
+}
+.dets{
+  text-align: left;
 }
 </style>

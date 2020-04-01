@@ -1,8 +1,5 @@
 <template>
   <div id="app">
-    <b-link to="/signup">create account</b-link>
-    <b-link to="/signin"> login </b-link>
-    <b-link to="/"> home </b-link>
     <router-view/>
   </div>
 </template>
@@ -15,7 +12,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
